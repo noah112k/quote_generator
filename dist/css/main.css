@@ -2,7 +2,7 @@ body {
   color: #faed27;
   margin: 0;
   padding: 0;
-  font-family: "FabrikBold", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal; }
 
 .background {
@@ -27,11 +27,17 @@ body {
   background: rgba(0, 0, 0, 0.5); }
   .quote-display .quote {
     padding-top: 10vh;
-    font-size: 5rem; }
+    padding-left: 1vw;
+    font-size: 5rem;
+    font-weight: 500;
+    transition-property: opacity;
+    transition-duration: 2s; }
   .quote-display .author {
     font-weight: 300;
     text-align: center;
-    padding-right: 10vw; }
+    padding-right: 10vw;
+    transition-property: opacity;
+    transition-duration: 2s; }
   .quote-display .secondary-text {
     color: white; }
 
@@ -52,3 +58,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border: 3px solid #faed27;
     cursor: pointer; }
+
+.fade-out {
+  opacity: 0; }

@@ -1,10 +1,14 @@
 $primary-color: #444;
 $secondary-color: #faed27;
+@mixin fade {
+  transition-property: opacity;
+  transition-duration: 2s;
+}
 body {
   color: $secondary-color;
   margin: 0;
   padding: 0;
-  font-family: "FabrikBold", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
 }
 .background {
@@ -31,12 +35,16 @@ body {
 
   .quote {
     padding-top: 10vh;
+    padding-left: 1vw;
     font-size: 5rem;
+    font-weight: 500;
+    @include fade;
   }
   .author {
     font-weight: 300;
     text-align: center;
     padding-right: 10vw;
+    @include fade;
   }
   .secondary-text {
     color: white;
@@ -60,4 +68,9 @@ body {
     border: 3px solid $secondary-color;
     cursor: pointer;
   }
+}
+
+//Gives the fade in/out property
+.fade-out {
+  opacity: 0;
 }
