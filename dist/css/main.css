@@ -26,13 +26,14 @@ body {
   grid-area: quote;
   background: rgba(0, 0, 0, 0.5); }
   .quote-display .quote {
-    padding-top: 10vh;
     padding-left: 1vw;
-    font-size: 5rem;
+    font-size: 10vh;
     font-weight: 500;
+    line-height: 12vh;
     transition-property: opacity;
     transition-duration: 2s; }
   .quote-display .author {
+    font-size: 3rem;
     font-weight: 300;
     text-align: center;
     padding-right: 10vw;
@@ -61,3 +62,22 @@ body {
 
 .fade-out {
   opacity: 0; }
+
+.long-quote {
+  line-height: 10vh;
+  font-weight: 500;
+  font-size: 8vh;
+  padding-left: 1vw;
+  transition-property: opacity;
+  transition-duration: 2s; }
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "generator" "quote"; }
+    .main-container .button {
+      margin-top: 5vh;
+      margin-bottom: 5vh; }
+  .button {
+    text-align: center; } }

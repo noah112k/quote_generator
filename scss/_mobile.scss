@@ -1,0 +1,22 @@
+@include mediaXlg {
+}
+@include mediaLg {
+}
+@include mediaMd {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "generator"
+      "quote";
+    .button {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+  }
+  .button {
+    text-align: center;
+  }
+}
+@include mediaSm {
+}
